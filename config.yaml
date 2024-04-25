@@ -1,0 +1,24 @@
+data_config:
+  dataset_dir: '/data_versions/selected_data.csv'
+  seq_len: 12
+  batch_size: 1
+  test_split: 0.2
+  validation_split: 0.1
+  seed_value: 5
+
+train_config:
+  train_mode: False
+  epochs: 500
+  learning_rate: 1.0e-3
+
+inference_config:
+  pretrained_ckpt: '/pretrained_checkpoints/epoch=337-val_loss=0.0931.ckpt'
+
+model_config:
+  input_size: 15
+  hidden_size: 30
+  num_layers: 5
+  output_size: 1
+
+logger_config:
+  log_dir: '/vyoma_test_logs'
